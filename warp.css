@@ -1,0 +1,56 @@
+body {
+    background-image: url(https://media.istockphoto.com/id/157195136/photo/columbia-university-college-walk.jpg?s=612x612&w=is&k=20&c=NB6p9l2jv8pFT03XQGvVyxZjLFCcwJWHVVIdGt0_vXQ=);
+  }
+div {
+    background-color: rgb( 155 221 255);
+    height: 100%;
+    width: 100%;
+}
+/*set width and height of class/syllabus search form*/
+form{
+    background-color: rgb(99, 175, 237);
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*change look of the input search box itself*/
+/* 
+"all: unset;" 
+resets the default browser desig?
+*/
+input{
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+/*this next bit will allow us to set the
+the style of the placeholder text inside the search box.
+default is grey text, to change this we gotta: */
+::placeholder{
+    color:#fff;
+    opacity: 0.7;
+}
+/*last bit changes the look and feel of the 
+button. You can see here that we have replaced
+the search button with a search icon.
+**went into HTML file and added svg attribute?
+(svg is image of the search icon)*/
+button{
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+svg{
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
